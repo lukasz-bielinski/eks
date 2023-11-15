@@ -69,6 +69,4 @@ module "eks_auth" {
       groups   = ["system:masters"]
     },
   ]
-
-
 }
