@@ -20,3 +20,9 @@ output "cluster_name" {
   description = "Kubernetes Cluster Name"
   value       = module.eks.cluster_name
 }
+
+
+output "role_arn" {
+  value = aws_iam_role.backstage_eks_role.arn
+  description = "The ARN of the IAM role for Backstage EKS integration"
+}
